@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "@/app/components/Header"; 
 
 export default function Home() {
   return (
@@ -6,7 +6,6 @@ export default function Home() {
       <Header />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         {/* Tarjeta 1: BIENVENIDOS */}
-        {/* Se quitó bg-white para que se vea el fondo oscuro, pero la tarjeta tiene que tener un color para que el texto se lea */}
         <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Bienvenidos a Engineering City S.A.S
@@ -17,7 +16,6 @@ export default function Home() {
         </div>
 
         {/* Tarjeta 2: QUIÉNES SOMOS */}
-        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
         <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Quiénes Somos
@@ -29,7 +27,6 @@ export default function Home() {
         </div>
 
         {/* Tarjeta 3: SERVICIOS */}
-        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
         <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Servicios
@@ -43,7 +40,6 @@ export default function Home() {
         </div>
 
         {/* Tarjeta 4: PROYECTOS */}
-        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
         <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Proyectos
@@ -54,7 +50,6 @@ export default function Home() {
         </div>
 
         {/* Tarjeta 5: CONTACTO */}
-        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
         <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Contacto
