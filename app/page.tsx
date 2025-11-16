@@ -1,29 +1,40 @@
-// CÓDIGO PARA app/page.tsx (USA ESTE)
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    // <main> contiene todo el contenido principal
-    <main className="min-h-screen bg-gray-100 p-8"> 
-
-      {/* Contenedor principal para centrar el contenido y darle un ancho máximo */}
-      <div className="max-w-4xl mx-auto space-y-6"> 
-
-        {/* Bloque: Bienvenidos */}
-        <div className="bg-white shadow-lg rounded-lg p-6"> 
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Bienvenidos a Engineering City S.A.S</h1>
-          <p className="text-gray-600">Empresa dedicada a la arquitectura, ingeniería y consultoría técnica en Bogotá, Colombia.</p>
+    <>
+      <Header />
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        {/* Tarjeta 1: BIENVENIDOS */}
+        {/* Se quitó bg-white para que se vea el fondo oscuro, pero la tarjeta tiene que tener un color para que el texto se lea */}
+        <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Bienvenidos a Engineering City S.A.S
+          </h2>
+          <p className="text-gray-300">
+            Empresa dedicada a la arquitectura, ingeniería y consultoría técnica en Bogotá, Colombia.
+          </p>
         </div>
 
-        {/* Bloque: Quiénes Somos */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Quiénes Somos</h2>
-          <p className="text-gray-600">Engineering City S.A.S es una empresa fundada en 2014, especializada en servicios de arquitectura, ingeniería y consultoría técnica.</p>
+        {/* Tarjeta 2: QUIÉNES SOMOS */}
+        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
+        <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Quiénes Somos
+          </h2>
+          <p className="text-gray-300">
+            Engineering City S.A.S es una empresa fundada en 2014, especializada en servicios de arquitectura, ingeniería
+            y consultoría técnica.
+          </p>
         </div>
 
-        {/* Bloque: Servicios */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Servicios</h2>
-          <ul className="list-disc list-inside text-gray-600 ml-4">
+        {/* Tarjeta 3: SERVICIOS */}
+        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
+        <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Servicios
+          </h2>
+          <ul className="list-disc ml-6 text-gray-300">
             <li>Arquitectura e ingeniería</li>
             <li>Consultoría técnica</li>
             <li>Construcción de obras civiles</li>
@@ -31,20 +42,31 @@ export default function Home() {
           </ul>
         </div>
 
-        {/* Bloque: Proyectos */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Proyectos</h2>
-          <p className="text-gray-600">Próximamente encontrarás aquí algunos de nuestros proyectos destacados.</p>
+        {/* Tarjeta 4: PROYECTOS */}
+        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
+        <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Proyectos
+          </h2>
+          <p className="text-gray-300">
+            Próximamente encontrarás aquí algunos de nuestros proyectos destacados.
+          </p>
         </div>
 
-        {/* Bloque: Contacto */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Contacto</h2>
-          <p className="text-gray-600">Dirección: Calle 151 #96A-21, Bogotá, Colombia</p>
-          <p className="text-gray-600">Teléfono: (1) 6925639</p>
+        {/* Tarjeta 5: CONTACTO */}
+        {/* Se quitó bg-white y se puso un fondo gris oscuro para contraste */}
+        <div className="p-6 rounded-lg shadow-md border border-gray-700 bg-gray-800 w-full max-w-5xl mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Contacto
+          </h2>
+          <p className="text-gray-300">
+            Dirección: Calle 151 #96A-21, Bogotá, Colombia
+            <br />
+            Teléfono: (1) 6925639
+          </p>
         </div>
 
-      </div>
-    </main>
-  )
+      </main>
+    </>
+  );
 }
